@@ -1,11 +1,10 @@
 <div class="contianer">
     <br>
-    <h4>{{question.content}}</h4>
+    <h4>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h4>
       <p>UserName: {{question.author}}</p>
-      <p>Additional Notes: {{question.notes}}</p>
       <br>
-    {{update-question question=question update="update"}}
-    <button {{action 'delete' question}}>Delete</button>
+    {{update-question question=question update=update}}
+
     <br>
     <br>
     <hr>

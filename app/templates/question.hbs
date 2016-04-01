@@ -1,0 +1,10 @@
+<h2>More information on {{question.content}}</h2>
+<h4>User: {{question.author}}</h4>
+<p>
+  Additional Notes: {{question.notes}}
+</p>
+
+<h3>Answer this question</h3>
+
+  {{update-question question=model update="update"}}
+  {{question-detail question=model destroyQuestion="destroyQuestion"}}

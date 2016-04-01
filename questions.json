@@ -10,5 +10,12 @@
   "content": "Can you have multiple models?",
   "author": "Kylie Jenner",
   "notes": "This is my first time using ember."
-  }]
+  }],
+  "answers": [{
+    "content": "Because you must use the outlet in your application.hbs file. Duhhh.",
+    "author": "Miley Cyrus"
+    }, {
+      "content": "Because you must use the outlet in your application.hbs file. Duhhh.",
+      "author": "Miley Cyrus"
+      }]
 }
