@@ -4,6 +4,7 @@
       <p>UserName: {{question.author}}</p>
       <p>Additional Notes: {{question.notes}}</p>
       <br>
+    {{update-question question=question update="update"}}
     <button {{action 'delete' question}}>Delete</button>
     <br>
     <br>
