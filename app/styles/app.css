@@ -1,0 +1,16 @@
+.active {
+  color: white;
+  margin-right: 4px;
+  list-style: none;
+  margin-top: 9px;
+}
+
+.navbar {
+  background: black;
+}
+
+.jumbotron {
+  text-align: center;
+  color: white;
+  background: black;
+}

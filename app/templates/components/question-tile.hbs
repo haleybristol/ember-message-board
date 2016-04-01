@@ -1,7 +1,11 @@
 <div class="contianer">
-  <h3>Why</h3>
-  <ul>
-    <li>{{question.content}} {{question.author}} Notes:{{question.notes}}
-    </li>
-  </ul>
+    <br>
+    <h4>{{question.content}}</h4>
+      <p>UserName: {{question.author}}</p>
+      <p>Additional Notes: {{question.notes}}</p>
+      <br>
+    <button {{action 'delete' question}}>Delete</button>
+    <br>
+    <br>
+    <hr>
 </div>
