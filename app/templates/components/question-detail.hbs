@@ -5,10 +5,12 @@
       Additional Notes: {{question.notes}}
       <hr>
       <br>
+    </div>
+    <div class= "container">
       <h1>Answers:</h1>
       {{#each question.answers as |answer|}}
-        <h3>{{answer.content}}</h3>
-        <h4>{{answer.author}}</h4>
+        <li>{{answer.content}}</li>
+        <ul><li>{{answer.author}}</li></ul>
       {{/each}}
     </div>
 </div>
