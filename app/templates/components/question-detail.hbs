@@ -1,6 +1,14 @@
-<h2>{{question.content}}</h2>
-<h5>By: {{question.author}}</h5>
-<h5>{{question.notes}}</h5>
-
-
-<button {{action 'delete' question}}>Delete</button>
+<div class="container">
+  <h2>{{question.content}}</h2>
+  <h4>User: {{question.author}}</h4>
+    <div class="notes">
+      Additional Notes: {{question.notes}}
+      <hr>
+      <br>
+      <h1>Answers:</h1>
+      {{#each question.answers as |answer|}}
+      <h3>{{answer.author}}</h3>
+      <h4>"{{answer.content}}"</h4>
+      {{/each}}
+    </div>
+</div>

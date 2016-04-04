@@ -1,8 +1,13 @@
 
 <ul>
   {{#each model as |question|}}
-    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+    {{question-tile question=question update="update"}}
   {{/each}}
+
+  <div class="container update">
+    {{update-question question=question update="update"}}
+  </div>
 </ul>
+
 
 {{new-question save2="save3"}}
