@@ -1,6 +1,6 @@
 <div class="contianer">
     <br>
-    <h4>{{answer-notification answerMe}}{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h4>
+    <h4>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}{{answer-notification question}}</h4>
       <p>UserName: {{question.author}}</p>
       <br>
     {{update-question question=question update=update}}
